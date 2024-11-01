@@ -1,4 +1,4 @@
-将该方法与QwenVL结合，使用VLMEvalKit对int2量化做了评估。
+将该方法与QwenVL结合，使用VLMEvalKit对int2量化做了评估。后续会上传具体的评估结果。官方原文件如下：
 # [QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks](https://arxiv.org/abs/2402.04396), ICML 2024
 
 QuIP# is a weight-only post-training quantization method that achieves state-of-the-art performance in extreme compression ($\le 4$ bits per weight) regimes.
