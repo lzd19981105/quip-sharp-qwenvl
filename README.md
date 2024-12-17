@@ -1,4 +1,7 @@
-将该方法与[QwenVL](https://github.com/QwenLM/Qwen-VL)结合，使用[VLMEvalKit](https://github.com/open-compass/VLMEvalKit)对int2量化做了评估。后续会上传具体的评估结果。官方原文件如下：
+将该方法与[QwenVL](https://github.com/QwenLM/Qwen-VL)结合，使用[VLMEvalKit](https://github.com/open-compass/VLMEvalKit)对int2量化做了评估。与GPTQ-W3A16/GPTQ-W4A16在部分视觉任务上性能指标如下图所示所示：
+![效果图](/assets/performance.png)
+
+官方原文件如下：
 # [QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks](https://arxiv.org/abs/2402.04396), ICML 2024
 
 QuIP# is a weight-only post-training quantization method that achieves state-of-the-art performance in extreme compression ($\le 4$ bits per weight) regimes.
