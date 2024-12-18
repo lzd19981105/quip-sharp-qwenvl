@@ -1,5 +1,17 @@
-将该方法与[QwenVL](https://github.com/QwenLM/Qwen-VL)结合，使用[VLMEvalKit](https://github.com/open-compass/VLMEvalKit)对int2量化做了评估。与GPTQ-W3A16/GPTQ-W4A16在部分视觉任务上性能指标如下图所示所示：
+将该方法与[QwenVL](https://github.com/QwenLM/Qwen-VL)结合，使用[VLMEvalKit](https://github.com/open-compass/VLMEvalKit)对int2量化做了评估。与GPTQ-W3A16/GPTQ-W4A16在部分视觉任务上性能指标如下图/标所示所示：
 ![效果图](/assets/qwenvl_performance.png)
+
+| 任务/评测指标 | QwenVL-FP16 | QwenVL-GPTQ-W4A16 | QwenVL-GPTQ-W3A16 | QwenVL-QUIP#-W2A16 |
+| --- | --- | --- | --- | --- |
+|  MMBench_DEV_CN/acc   | 58.76 | 56.70 | 46.21 | - |
+|  MMBench_DEV_EN/acc   | - | - | - | 53.09 |
+|  MMMU_DEV_VAL/acc | 37.11 | 37.33 | 37 | 33.5 |
+| OCRVQA_TEST/acc | 53.09 | 49.96 | 45.83 | 52.57 |
+| TEXTVQA_VAL/acc | 59.92 | 58.56 | 55.56 | 54.16 |
+| DocVQA_VAL/acc |  57.61 | 55.81 | 52.75 | 50.49 |
+|  COCO_VAL/CIDEr | 93.62 | 91.28 | 83.24 | 85.53 |
+|  ChartQA_TEST/acc | 49.04 | 49.4 | 41.52 | 33.68 |
+|  AI2D_TEST/acc | 63.14 | 62.59 | 57.73 | 56.44 |
 
 官方原文件如下：
 # [QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks](https://arxiv.org/abs/2402.04396), ICML 2024
